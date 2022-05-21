@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- owl carrasol -->
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- wow css -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>🍕🍔🍝Food Ordering</title>
+  </head>
+  <body>
+
+
+ <!-- header section -->
+ <header>
+  <div class="container">
+    
+
+        <!-- menu -->
+        <div class="row">
+          <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-light ">
+     <div > <a class="navbar-brand" href="index.html"> </a> </div>
+         
+       <div>
+        <div class="delivery-info">
+          <img src="img/logo2.png">
+          <span>CAFE RETRO +880 1740 745 000</span>
+        </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link "  href="http://localhost/web%20design/index.php">Home</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link active new" aria-current="page"  href="http://localhost/web%20design%20(2)/order/index.html">ORDER</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost/web%20design%20(3)/menu/index.html">Unique Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ms-2 " href="http://localhost/web%20design%20(4)/aboutreview/index.php">ABOUT US</a>
+        </li>
+
+      </ul>
+
+      </div>
+      </div>
+
+     </nav>
+          </div>
+        </div>
+        <!-- banner -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="banner-text">
+               <p class="wow headShake">Welcome To Cafe Retro</p>
+               <h1 class=" wow bounceInDown " >Cafe Retro</h1>
+               
+            </div>
+            
+          </div>
+        </div>
+        
+  </div>
+      
+ </header>
+    <!-- header section end -->
+
+
+    <!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h3 class="sub-heading"> order now </h3>
+    <h1 class="heading"> unique & tasty </h1>
+
+    <form action="http://localhost/web%20design%20(2)/order/php/orderinfo.php" method="post">
+
+        <div class="inputBox">
+            <div class="input">
+                <span> Name</span>
+                <input type="text" name="name" placeholder="Enter your name">
+            </div>
+            <div class="input">
+                <span> number</span>
+                <input type="numeric" name="number" placeholder="enter your number">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>your order</span>
+                <label for="food" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Choose food item:</label>
+                <select name="fooditem" id="food">
+                    <option value="Chicken Pizza" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Chicken Pizza</option>
+                    <option value="Chicken Burger" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Chicken Burger</option>
+                    <option value="Masala Parata" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Masala Parata</option>
+                    <option value="Ice Cream" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Ice Cream</option>
+                    <option value="Chocolate Bowl" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Chocolate Bowl</option>
+                    <option value="Muffin" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Muffin</option>
+                    <option value="Fruit Juice" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Fruit Juice</option>
+                    <option value="Mixed Fruit" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Mixed Fruits</option>
+                    <option value="Chicken Noodles" style="padding: 13px; padding-bottom: 10px; font-size: 14px; text-align: center;">Chicken Noodles</option>
+                </select>
+                <!-- <input type="text" name="foodname" placeholder="enter food name"> -->
+            </div>
+            <div class="input">
+                <span>Add On</span>
+                <input type="text" name="addon" placeholder="">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span>quantity</span>
+                <input type="number" name="nooforders" placeholder="how many orders">
+            </div>
+            <div class="input">
+                <span>date and time</span>
+                <input type="datetime-local" name="datetimelocal">
+            </div>
+        </div>
+        <div class="inputBox">
+            <div class="input">
+                <span> address</span>
+                <textarea name="address" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="input">
+                <span>any advice</span>
+                <textarea name="advice" placeholder="enter your message" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+
+      <tr>
+        <td> <li class="btn">
+          <input type="submit" value="Cash On delivery 💸" class="btn">
+        </li></td>
+        </tr>
+        <tr>
+        <td>&nbsp;</td> </tr>
+        <tr>
+        <td>&nbsp;</td> </tr>
+        <tr>
+        <td>&nbsp;</td> </tr>
+        <tr>
+        <td>&nbsp;</td> </tr>
+        <tr>
+        <td>&nbsp;</td> </tr>
+        <tr>
+         <td><li class="btn">
+          <input type="submit" value="Pay with Cards💳" name="card" class="btn" >
+        </li></td>
+    </form>
+
+</section>
+
+<!-- order section ends -->
+
+
+ <!-- footer -->
+
+ <section class="footer">
+   <div class="container">
+     
+       <div class="footer-content" >
+        
+          <div class="footer-text ">
+            <img src="img/logo3.png" class="footer-logo img-fluid">
+            <p class="fottertext">Welcome to Cafe Retro.Best Cafe in Bangladesh.</br> Come & Enjoy our delicious dish.</br> UUnique and tasty Food items</br> With many facilities.</p>
+            <p class="footerend">© Cafe Retro. All rights reserved.</p>
+          </div>
+          <div class="icon">
+            <ul>
+        <li><a href="https://www.facebook.com/annesha.tasneem.3"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://mobile.twitter.com/cupidonduty/status/1458827128246439942"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="http://be.net/naimulpeal"><i class="fa fa-behance"></i></a></li>
+       <li><a href=""><i class="fa fa-github"></i></a></li>
+      
+        </ul>
+          </div>
+        </div>
+
+      
+     </div>
+   </div>
+ </section>
+
+
+
+
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    
+    <!-- owl java file -->
+    <script src="js/jquery.min.js" ></script>
+    <script src="js/owl.carousel.js"></script>
+
+    <script type="">
+      $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:false,
+     autoplayTimeout:1000,
+     autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+   })
+    </script>
+
+
+   <!-- wow js -->
+    <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <audio autoplay loop>
+      <source src="music/music.mpeg" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
